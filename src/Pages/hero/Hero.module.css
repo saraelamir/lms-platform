@@ -1,0 +1,704 @@
+/* ===== GLOBAL THEME ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.heroSection,
+.categoriesSection,
+.coursesSection,
+.whySection,
+.footer {
+  position: relative;
+}
+
+/* ================= HERO ================= */
+.heroSection {
+  background: linear-gradient(135deg, #0b1026 0%, #11183a 45%, #1a1f4d 100%);
+  padding: 80px 0;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: 8%;
+  top: 10%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.22), transparent 70%);
+  filter: blur(10px);
+}
+
+.heroSection::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at left top, rgba(255,255,255,.04), transparent 30%);
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.heroLeft {
+  flex: 1;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(129, 140, 248, 0.25);
+  color: #c7d2fe;
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
+
+.heroDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #818cf8;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  max-width: 620px;
+}
+
+.highlight {
+  color: #8b5cf6;
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+}
+
+.btnPrimary,
+.btnOutline,
+.viewAllBtn,
+.viewBtn {
+  transition: all 0.25s ease;
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff !important;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 12px 24px rgba(99,102,241,.25);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-2px);
+}
+
+.btnOutline {
+  border: 1px solid rgba(255,255,255,0.18);
+  color: white !important;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(8px);
+}
+
+.btnOutline:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.playIcon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+}
+
+.statsRow {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.statNum {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.statLbl {
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+}
+
+.statDivider {
+  width: 1px;
+  height: 42px;
+  background: rgba(255,255,255,0.1);
+}
+
+.heroRight {
+  flex: 0 0 360px;
+}
+
+.courseCard,
+.floatingBadge {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
+}
+
+.cardTop {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.cardIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconPurple {
+  background: rgba(99,102,241,.25);
+}
+
+.iconTeal {
+  background: rgba(20,184,166,.25);
+}
+
+.cardName {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cardCat {
+  font-size: 12px;
+  color: rgba(255,255,255,.55);
+}
+
+.cardProgressBar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.cardFill {
+  height: 100%;
+}
+
+.purpleFill {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+}
+
+.tealFill {
+  background: linear-gradient(90deg, #14b8a6, #2dd4bf);
+}
+
+.cardMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgba(255,255,255,.6);
+}
+
+.stars {
+  color: #fbbf24;
+}
+
+.floatingBadge {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.badgeAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.badgeText {
+  font-size: 12px;
+  color: rgba(255,255,255,.72);
+}
+
+.badgeText strong {
+  display: block;
+  color: white;
+}
+
+/* ================= LIGHT SECTIONS ================= */
+.categoriesSection,
+.coursesSection,
+.whySection {
+  padding: 85px 0;
+}
+
+.categoriesSection,
+.coursesSection,
+.whySection {
+  background: #f8faff;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.sectionHeader h2,
+.sectionHeaderRow h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.sectionHeader p,
+.sectionHeaderRow p,
+.whySubtitle {
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.categoriesGrid,
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 22px;
+}
+
+.categoryCard,
+.whyCard,
+.featuredCard {
+  background: white;
+  border: 1px solid #eef2ff;
+  box-shadow: 0 10px 30px rgba(15,23,42,.06);
+}
+
+.categoryCard {
+  border-radius: 22px;
+  padding: 28px 22px;
+  text-align: center;
+  text-decoration: none;
+  color: #111827;
+}
+
+.categoryCard:hover,
+.whyCard:hover,
+.featuredCard:hover {
+  transform: translateY(-6px);
+}
+
+.categoryIcon,
+.whyIcon {
+  font-size: 2rem;
+  color: #6366f1;
+  margin-bottom: 12px;
+}
+
+.categoryName {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* ================= COURSES ================= */
+.sectionHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.viewAllBtn {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white !important;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 24px;
+}
+
+.featuredCard {
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.featuredImageWrapper {
+  height: 210px;
+  overflow: hidden;
+}
+
+.featuredImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featuredBody {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.featuredTop,
+.featuredFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.star {
+  color: #fbbf24;
+}
+
+.starOff {
+  color: #d1d5db;
+}
+
+.featuredTitle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.featuredDesc,
+.instructor {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.featuredFooter {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.viewBtn {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* ================= WHY ================= */
+.whyCard {
+  border-radius: 22px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.whyCard h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.whyCard p {
+  color: #6b7280;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #0b1026;
+  color: rgba(255,255,255,.7);
+  padding: 70px 0 0;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 34px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.footerLogoBox {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerBrand p {
+  margin-top: 16px;
+  max-width: 280px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.footerCol h5 {
+  color: white;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.footerCol a {
+  display: block;
+  color: rgba(255,255,255,.6);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footerCol a:hover,
+.socialIcons a:hover {
+  color: white;
+}
+
+.footerBottom {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcons a {
+  color: rgba(255,255,255,.6);
+  font-size: 16px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroLeft,
+  .heroRight {
+    width: 100%;
+  }
+
+  .subtitle {
+    margin-inline: auto;
+  }
+
+  .heroBtns,
+  .statsRow {
+    justify-content: center;
+  }
+
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .sectionHeader h2,
+  .sectionHeaderRow h2 {
+    font-size: 1.8rem;
+  }
+
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statsRow {
+    gap: 16px;
+  }
+
+  .statDivider {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= SMOOTH ANIMATION UPDATE ================= */
+
+.categoryCard,
+.whyCard,
+.featuredCard,
+.courseCard,
+.floatingBadge,
+.btnPrimary,
+.btnOutline,
+.viewAllBtn,
+.featuredImage {
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease,
+    background-color 0.35s ease,
+    color 0.35s ease,
+    opacity 0.35s ease;
+  will-change: transform;
+}
+
+/* ===== CATEGORY ===== */
+.categoryCard:hover {
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.14);
+  border-color: rgba(99, 102, 241, 0.18);
+}
+
+/* ===== FEATURED COURSES ===== */
+.featuredCard:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.12);
+}
+
+.featuredCard:hover .featuredImage {
+  transform: scale(1.06);
+}
+
+.viewBtn:hover {
+  color: #4f46e5;
+  letter-spacing: 0.3px;
+}
+
+/* ===== WHY US ===== */
+.whyCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+}
+
+/* ===== HERO SMALL CARDS ===== */
+.courseCard:hover,
+.floatingBadge:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.22);
+}
+
+/* ===== BUTTONS ===== */
+.btnPrimary:hover,
+.viewAllBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 28px rgba(99, 102, 241, 0.25);
+}
+
+.btnOutline:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.06);
+}
+
+/* ===== CLICK EFFECT ===== */
+.categoryCard:active,
+.featuredCard:active,
+.whyCard:active,
+.btnPrimary:active,
+.viewAllBtn:active {
+  transform: translateY(-2px) scale(0.99);
+}

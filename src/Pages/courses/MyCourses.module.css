@@ -1,0 +1,16 @@
+.cardHover {
+  transition: all 0.3s ease-in-out;
+}
+
+.cardHover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.progressBarAnimated {
+  transition: width 1s ease-in-out;
+}
+
+.emptyStateContainer {
+  max-width: 600px;
+}

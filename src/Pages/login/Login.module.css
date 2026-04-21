@@ -1,0 +1,60 @@
+/* Login.module.css */
+.authCard {
+    border-radius: 24px !important;
+    border: none !important;
+}
+
+.logoIconWrapper {
+    width: 60px;
+    height: 60px;
+    background-color: #1a56db;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 10px 20px rgba(26, 86, 219, 0.2);
+}
+
+.passwordWrapper {
+    position: relative;
+}
+
+.eyeIcon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #64748b;
+    z-index: 10;
+    transition: color 0.2s;
+}
+
+.eyeIcon:hover {
+    color: #1a56db;
+}
+
+.mainBtn {
+    background-color: #1a56db !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    font-weight: 700 !important;
+    transition: all 0.3s ease;
+}
+
+.mainBtn:hover {
+    background-color: #1444b3 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 86, 219, 0.3);
+}
+
+:global(.form-control) {
+    border-radius: 12px !important;
+    padding-right: 45px !important; 
+}
+
+
+
+

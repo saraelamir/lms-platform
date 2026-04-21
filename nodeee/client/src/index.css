@@ -1,0 +1,94 @@
+:root {
+  --ch-blue: #4a90e2;
+  --ch-blue-dark: #3b7dd8;
+  --ch-green: #48bb78;
+  --ch-green-dark: #38a169;
+  --ch-bg: #ffffff;
+  --ch-bg-soft: #f7fafc;
+  --ch-heading: #2d3748;
+  --ch-body: #718096;
+  --ch-star: #ecc94b;
+  --ch-radius: 14px;
+  --ch-shadow: 0 4px 14px rgba(45, 55, 72, 0.08);
+  --ch-shadow-sm: 0 2px 8px rgba(45, 55, 72, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--ch-bg);
+  color: var(--ch-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ch-heading);
+  font-weight: 700;
+}
+
+a {
+  color: var(--ch-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--ch-blue-dark);
+}
+
+.ch-btn-primary {
+  background: var(--ch-blue);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--ch-radius);
+  box-shadow: var(--ch-shadow-sm);
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.ch-btn-primary:hover {
+  background: var(--ch-blue-dark);
+  color: #fff;
+}
+
+.ch-btn-accent {
+  background: var(--ch-green);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--ch-radius);
+  box-shadow: var(--ch-shadow-sm);
+  transition: background 0.15s ease;
+}
+
+.ch-btn-accent:hover {
+  background: var(--ch-green-dark);
+  color: #fff;
+}
+
+.ch-card {
+  border-radius: var(--ch-radius);
+  border: none;
+  box-shadow: var(--ch-shadow);
+  overflow: hidden;
+}
+
+.ch-navbar {
+  background: #fff !important;
+  box-shadow: var(--ch-shadow-sm);
+}
+
+.ch-hero-strip {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  border-radius: var(--ch-radius);
+}

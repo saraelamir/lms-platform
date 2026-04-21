@@ -1,0 +1,59 @@
+.learningContainer {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.videoSection {
+  background: #000;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+  background: white;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.lessonItem {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 12px;
+}
+
+.lessonItem:hover {
+  background-color: #f0f7ff;
+  border-color: #0d6efd33;
+}
+
+.activeLesson {
+  background-color: #e7f1ff !important;
+  border-color: #0d6efd !important;
+}
+
+.completedIcon {
+  color: #198754;
+}
+
+.contentCard {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.lessonTitle {
+  font-weight: 700;
+  color: #212529;
+}
