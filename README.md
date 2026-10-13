@@ -1,16 +1,139 @@
-# React + Vite
+# 🎓 LMS Platform — Learning Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Learning Management System (LMS) built with **React.js, Node.js, Express.js, and MongoDB**. The platform provides dedicated experiences for students and instructors, enabling course management, online learning, course enrollment, and learning progress tracking.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[**View LMS Platform Demo**](https://drive.google.com/file/d/1P-zxbsgPfSm6b5xGiTGu3VP9btJYhlOl/view)
 
-## React Compiler
+## 📸 Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🏠 Home Page
 
-## Expanding the ESLint configuration
+![Home Page](./screenshots/Home.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✨ Hero Section
+
+![Hero Section](./screenshots/Hero.jpg)
+
+### 📚 Courses Page
+
+![Courses Page](./screenshots/courses-page.png)
+
+### 🔐 Welcome Back Page
+
+![Welcome Back Page](./screenshots/welcomeBacke.png)
+
+### 🎓 My Courses
+
+![My Courses Page](./screenshots/myCorses_page.png)
+
+### 📖 Lesson Page
+
+![Lesson Page](./screenshots/lessone_page.png)
+
+### 🎬 Video Lesson Page
+
+![Video Lesson Page](./screenshots/vidioLesson_page.png)
+
+## ✨ Features
+
+- 🔐 User authentication and protected access.
+- 👥 Role-based access for students and instructors.
+- 📚 Course and lesson management.
+- 🎓 Course enrollment for students.
+- 🎬 Online video lessons.
+- ⭐ Course rating and reviews.
+- 📊 Learning progress tracking.
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React.js
+- Vite
+- JavaScript (ES6+)
+- CSS
+
+**Backend**
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- RESTful APIs
+
+**Tools**
+- Git & GitHub
+- npm
+
+## 📂 Project Structure
+
+```text
+lms-platform/
+├── nodeee/                 # Backend
+├── public/                 # Public assets
+├── screenshots/            # Project screenshots
+├── src/                    # Frontend source code
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js and npm
+- MongoDB or a MongoDB Atlas database
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/saraelamir/lms-platform.git
+cd lms-platform
+```
+
+### 2. Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the Frontend
+
+```bash
+npm run dev
+```
+
+The frontend will usually run at `http://localhost:5173`.
+
+### 4. Start the Backend
+
+Open another terminal:
+
+```bash
+cd nodeee
+npm install
+```
+
+Configure your environment variables using the backend's `.env.example` file, then run the appropriate start command defined in `nodeee/package.json`.
+
+## 🔑 Environment Variables
+
+Check `nodeee/.env.example` for the exact environment variables required by the backend.
+
+**Important:** Never upload your real `.env` file or expose database credentials and secret keys.
+
+## 🎯 Project Overview
+
+This project showcases full-stack web development skills, including building interactive React interfaces, developing REST APIs, integrating MongoDB, and implementing student and instructor workflows.
+
+## 👩‍💻 Author
+
+**Sara El-Amir**
+
+- GitHub: [@saraelamir](https://github.com/saraelamir)
+- LinkedIn: [Sara El-Amir](https://www.linkedin.com/in/saraa-elamir/)
+
+---
+
+⭐ Thank you for checking out the project!
